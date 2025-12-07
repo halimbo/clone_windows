@@ -1,3 +1,9 @@
+### You need:
+
+A working linux install with partclone
+
+Windows Installer Iso
+
 ### Clone and compress (unmount beforehand, go in root shell)
 
 ```#partclone.ntfs -c -s /dev/oldwindows -o - | gzip > windows.pcl.gz```
