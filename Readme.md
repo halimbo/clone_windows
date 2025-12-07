@@ -1,8 +1,8 @@
 ### You need:
 
-A working linux install with partclone
+- A working linux install with partclone
 
-Windows Installer ISO
+- Windows Installer ISO
 
 ### Clone and compress (unmount beforehand, go in root shell)
 
