@@ -2,7 +2,7 @@
 
 A working linux install with partclone
 
-Windows Installer Iso
+Windows Installer ISO
 
 ### Clone and compress (unmount beforehand, go in root shell)
 
