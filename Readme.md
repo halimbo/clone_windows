@@ -13,7 +13,9 @@ This will call ntfsresize. You could do this manually or with other programs.
 ### Apply necessary fixes to mount and boot the partition
 
 ```#partclone.ntfsfixboot -p /dev/windows```
+
 ```#partclone.ntfsfixboot -w /dev/windows```
+
 ```#ntfsfix /dev/windows```
 
 ### Boot up windows installer iso and hit Shift+F10 (Change numbers accordingly)
@@ -21,16 +23,23 @@ This will call ntfsresize. You could do this manually or with other programs.
 Drive l:\ will be the windows partition (might be mounted already)
 
 ```#select disk 1```
+
 ```#select partition 2```
+
 ```#assign letter l```
 
 Drive k:\ will be the EFI partition (needs esp and boot flag)
 
 ```#diskpart```
+
 ```#list disk```
+
 ```#select disk 1```
+
 ```#list partition```
+
 ```#select partition 1```
+
 ```#assign letter k```
 
 ```#exit```
@@ -39,5 +48,6 @@ Drive k:\ will be the EFI partition (needs esp and boot flag)
 
 ```#bcdboot l:\windows /s k: /f UEFI ```
 
-You may need to specify your locale with "/l en_US" (change accordingly)
+You may need to specify your locale with "/l en_US" (change accordingly).
+
 This process creates a bootable UEFI Entry for your motherboard and it might overwrite the boot order.
