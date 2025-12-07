@@ -28,7 +28,7 @@ This will call ntfsresize. You could do this manually or with other programs.
 
 Change numbers accordingly.
 
-Drive l:\ will be the windows partition (might be mounted already)
+Drive l:\ will be the windows partition (might be mounted already).
 
 ```#list disk```
 
@@ -40,7 +40,7 @@ Drive l:\ will be the windows partition (might be mounted already)
 
 ```#assign letter l```
 
-Drive k:\ will be the EFI partition (needs esp and boot flag)
+Drive k:\ will be the EFI partition (needs esp and boot flag).
 
 ```#diskpart```
 
