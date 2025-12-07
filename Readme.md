@@ -4,7 +4,7 @@
 
 ### Restore (target partition has to be NTFS)
 
-```gzip -d -c windows.pcl.gz | partclone.ntfs -r -o /dev/windows```
+```#gzip -d -c windows.pcl.gz | partclone.ntfs -r -o /dev/windows```
 
 If the restored partition is smaller than the target partition, open up gparted and right click + "Check".
 
