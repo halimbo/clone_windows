@@ -18,13 +18,19 @@ This will call ntfsresize. You could do this manually or with other programs.
 
 ```#ntfsfix /dev/windows```
 
-### Boot up windows installer iso and hit Shift+F10 (Change numbers accordingly)
+### Boot up windows installer iso and hit Shift+F10 
+
+Change numbers accordingly.
 
 Drive l:\ will be the windows partition (might be mounted already)
 
+```#list disk```
+
 ```#select disk 1```
 
-```#select partition 2```
+```#list partition```
+
+```#select partition 3```
 
 ```#assign letter l```
 
@@ -32,11 +38,7 @@ Drive k:\ will be the EFI partition (needs esp and boot flag)
 
 ```#diskpart```
 
-```#list disk```
-
 ```#select disk 1```
-
-```#list partition```
 
 ```#select partition 1```
 
